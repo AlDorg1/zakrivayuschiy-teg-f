@@ -226,20 +226,20 @@
   transform-origin: left;
 }*/
 
-.button-save {
-  display: flex;
-  width: clamp(355px, 355px, 306px);
-  height: 55px;
-  border: 2px solid black;
-  margin: 0 auto 103px auto;
-  justify-content: center;
-  align-items: center;
-  column-gap: 8px;
-  position: relative;
-  overflow: hidden; 
-  background-color: white;
-  color: black;
-  cursor: pointer;
+.button-save { 
+  display: flex; 
+  width: clamp(306px, 355px, 355px); /* исправил порядок значений */
+  height: 55px; 
+  border: 2px solid black; /* используем переменную */
+  margin: 0 auto 103px auto; 
+  justify-content: center; 
+  align-items: center; 
+  column-gap: 8px; 
+  position: relative; 
+  overflow: hidden;  
+  background-color: white; 
+  color: black; 
+  cursor: pointer; 
 }
 
 .button__text {
@@ -249,24 +249,21 @@
   position: relative;
   z-index: 2;
   transition: color 0.5s ease-in-out;
-  color: currentColor;
-  mix-blend-mode: difference;
+  color: black;
 }
 
-.button-save::before {
-  content: "";
-  position: absolute;
-  left: -200%;
-  top: 0;
-  width: 200%;
-  height: 100%;
-  background-color: black;
-  transition: all 0.5s ease-in-out;
-  z-index: 1;
+.button-save::before { 
+  content: ""; 
+  position: absolute; 
+  inset: 0;
+  background-color: black; 
+  transform: translateX(-100%); 
+  transition: transform 0.5s ease-in-out;
+  z-index: 1; 
 }
 
 .button-save:hover::before {
-  left: 0;
+  transform: translateX(0);
 }
 
 .button-save:focus {
@@ -284,8 +281,8 @@
 .button-svg {
   position: relative;
   z-index: 2;
-  fill: currentColor;
-transition: fill 0.3s ease;
+  color: currentColor;
+transition: color 0.5s ease;
 }
 
 .button-save:hover .button-svg {
