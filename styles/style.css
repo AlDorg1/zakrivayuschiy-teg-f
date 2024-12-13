@@ -286,11 +286,12 @@
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
-fill: black;
+color: currentColor;
+transition: color 0.3s ease;
 }
 
 .button-save:hover .button-svg {
-  fill: white;
+  color: white;
 }
 
 .dialog {
