@@ -284,10 +284,8 @@
 
 .button-svg {
   position: relative;
-  z-index: 1;
-  mix-blend-mode: difference;
-color: currentColor;
-transition: color 0.3s ease;
+  z-index: 2;
+ 
 }
 
 .button-save:hover .button-svg {
