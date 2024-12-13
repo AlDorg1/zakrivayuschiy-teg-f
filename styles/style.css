@@ -240,6 +240,7 @@
   background-color: white; 
   cursor: pointer; 
   color: black;
+  z-index: 0;
 }
 
 .button__text {
@@ -284,7 +285,7 @@
 
 .button-svg {
   position: relative;
-  z-index: 2;
+  z-index: 1;
  
 }
 
