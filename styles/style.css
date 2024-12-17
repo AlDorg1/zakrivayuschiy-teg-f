@@ -358,19 +358,43 @@
 .like-icon.is-liked .heart{
   transform-origin: center;
   animation: like-animation 0.3s ease-in 0.1s;
+}
+
+.like-icon.is-liked .core {
   fill: var(--heart-color);
 }
 
-.is-liked {
+.like-icon.is-liked .main-body{
   fill: var(--heart-color);
 }
 
-@keyframes like-animation {
+@keyframes like-animation {  
   from {
     transform: scale(1);
   }
   to {
     transform: scale(1.25);
-    
+  }
+}
+
+.like-icon.is-liked .contour{
+  transform-origin: center;
+  animation: contour-color 0.3s ease-in 0.06s;
+}
+
+@keyframes contour-color {
+  to {
+    fill: var(--heart-color);
+  }
+}
+
+.like-icon.is-liked .sparks{
+  transform-origin: center;
+  animation: sparks-animation 0.3s ease-in 0.3s;
+}
+
+@keyframes sparks-animation {
+  to {
+    opacity: 1;
   }
 }
