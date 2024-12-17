@@ -1,14 +1,28 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+  /*шрифты*/
   --font-family-PressStart2P: "PressStart2P", sans-serif;
   --font-family-Inter: "Inter", sans-serif;
+  --font-size: 18px;
+  --font-size-button: 14px;
+  --normal-weight: 400;
+  --normal-line-height: 21px;
+
+  /*Основные цвета*/
   --main-color: #fff;
   --accent-color: #000;
+  --heart-color: red;
+
+  /*Анимация и временные апараметры*/
   --button-timing: 0.5s ease-in-out;
-  --common-gap: 8px;
+
+  /*Размеры кнопок и иконки*/
   --button-width: clamp(306px, 355px, 355px);
   --button-height: 55px;
-  --button-margin: 0 auto 103px auto;
   --border-width: 2px;
   --icon-size: 21px;
+
+  /*Отступы и интервалы*/
+  --common-gap: 8px;
+  --button-margin: 0 auto 103px auto;
 }
