@@ -29,8 +29,8 @@
 }
 
 .header {
-  width: clamp(375px, 700px, 700px);
-  height: clamp(327px, 368px, 368px);
+  width: clamp(23.438rem, 8.929rem + 38.69vw, 43.75rem);
+  height: clamp(20.438rem, 18.607rem + 4.881vw, 23rem);
   font-family: var(--font-family-PressStart2P);
   text-transform: uppercase;
   font-weight: var(--normal-weight);
@@ -44,19 +44,19 @@
 }
 
 .header-text {
-  font-size: 65px;
+  font-size: clamp(3.063rem, 2.348rem + 1.905vw, 4.063rem);
   line-height: 65px;
   margin-bottom: 20px;
 }
 
 .header-title {
-  font-size: 23px;
+  font-size: clamp(0.875rem, 0.473rem + 1.071vw, 1.438rem);
   line-height: 23px;
 }
 
 .card {
-  width: clamp(375px, 696px, 696px);
-  max-height: clamp(760px, 959px, 959px);
+  width: clamp(23.438rem, 9.107rem + 38.214vw, 43.5rem);
+  max-height: clamp(47.5rem, 38.616rem + 23.69vw, 59.938rem);
   outline: var(--border-width) solid var(--accent-color);
   margin-inline: auto;
   margin-block-end: 50px;
@@ -77,7 +77,7 @@
 }
 
 .card-img {
-  width: clamp(371px, 696px, 696px);
+  width: clamp(23.188rem, 8.679rem + 38.69vw, 43.5rem);
   aspect-ratio: 1;
 }
 
@@ -396,5 +396,12 @@
 @keyframes sparks-animation {
   to {
     opacity: 1;
+  }
+}
+
+@media (width >= 375px) {
+  .header {
+    min-height: 327px;
+    max-width: 375px;
   }
 }

@@ -17,7 +17,7 @@
   --button-timing: 0.5s ease-in-out;
 
   /*Размеры кнопок и иконки*/
-  --button-width: clamp(306px, 355px, 355px);
+  --button-width: clamp(19.125rem, 16.938rem + 5.833vw, 22.188rem);
   --button-height: 55px;
   --border-width: 2px;
   --icon-size: 21px;
