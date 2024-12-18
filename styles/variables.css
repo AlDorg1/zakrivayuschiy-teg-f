@@ -1,8 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
   /*шрифты*/
-  --font-family-PressStart2P: "PressStart2P", sans-serif;
-  --font-family-Inter: "Inter", sans-serif;
+  --accent-font: "PressStart2P", fantasy;
+  --main-font: "Inter", sans-serif;
   --font-size: 18px;
   --font-size-button: 14px;
   --normal-weight: 400;
@@ -17,7 +17,6 @@
   --button-timing: 0.5s ease-in-out;
 
   /*Размеры кнопок и иконки*/
-  --button-width: clamp(19.125rem, 16.938rem + 5.833vw, 22.188rem);
   --button-height: 55px;
   --border-width: 2px;
   --icon-size: 21px;
