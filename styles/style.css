@@ -14,6 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
+  font-variation-settings: 'wght' 700, var(--main-font);
   background-image: repeating-linear-gradient(to right,
       #d3d3d3,
       transparent 2px),
@@ -288,7 +289,7 @@
 }
 
 .dialog {
-  width: 353px;
+  width: 354px;
   font-family: var(--accent-font);
   text-transform: uppercase;
   padding: 0;
@@ -304,6 +305,7 @@
   column-gap: 20px;
   margin: 30px;
   align-items: center;
+  height: 63px;
 }
 
 .dialog-text {
@@ -335,11 +337,11 @@
 }
 
 .core {
-  transition: fill 0.3s linear;
+  transition: fill 3s linear;
 }
 
 .main-body {
-  transition: fill 9s linear;
+  transition: fill 3s linear;
 }
 
 .like-icon:hover .core {
@@ -352,7 +354,7 @@
 
 .like-icon:hover .main-body {
   fill: var(--accent-color);
- transition-delay: 0.05s;
+  transition: fill 3s linear;
 }
 
 .like-icon:not(:hover) .main-body {
@@ -366,6 +368,7 @@
 
 .like-icon:active .main-body {
   fill: var(--heart-color);
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .heart {
@@ -385,7 +388,7 @@
   fill: var(--heart-color);
   transition-duration: 0.3s;
   transition-delay: 0.06s;
-  
+
 }
 
 .like-icon.is-liked .sparks {
