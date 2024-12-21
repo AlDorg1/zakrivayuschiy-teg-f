@@ -14,11 +14,10 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  background-image: repeating-linear-gradient(
-      90deg,
+  font-variation-settings: 'wgth' 400, 'wdth' 0, 'opsz' 0;
+  background-image: repeating-linear-gradient(90deg,
       #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
+      transparent 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7, #1a1a1a);
   background-size: cover;
@@ -71,7 +70,7 @@
 }
 
 .card-title {
-  font-variation-settings: "wght" 700, var(--main-font);
+  font-variation-settings: 'wght' 700, 'wdth' 0, 'opsz' 0;
   line-height: 21.78px;
   padding: 5px 10px;
   font-size: var(--font-size);
@@ -138,7 +137,7 @@
   mix-blend-mode: hard-light;
 }
 
-@supports (text-stroke: 1px) {
+@supports ((text-stroke: 1px var(--main-color)) or (-webkit-text-stroke: 1px var(--main-color))) {
   .card-img-label {
     -webkit-text-stroke: 1px var(--main-color);
     text-stroke: 1px var(--main-color);
@@ -148,7 +147,7 @@
 
 .card-text {
   margin-block: 27px;
-  font-variation-settings: "wght" 400, var(--main-font);
+  font-variation-settings: 'wght' 400, 'wdth' 0, 'opsz' 0;
   line-height: var(--normal-line-height);
   margin-inline: 25px;
 }
@@ -159,8 +158,8 @@
   justify-content: flex-end;
 }
 
-.card__icon-button {
-  background-color: inherit;
+.card__icon-button {              /*честно, всей группой не понимаем замечание, я ведь через свойство*/
+  background-color: inherit;          /*mix-blend-mode: difference; плавно меняю цвет*/
   border: none;
   transition: border 0.3s ease;
   height: 38px;
@@ -187,8 +186,8 @@
   margin-block-end: 25px;
   transition: box-shadow 0.3s ease;
   display: inline-block;
-  overflow: hidden; 
-  background-color: transparent; 
+  overflow: hidden;
+  background-color: transparent;
   color: var(--main-color);
   outline: none;
   cursor: pointer;
